@@ -1,0 +1,35 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "eve-assist",
+  "main": "src/index.mjs",
+  "compatibility_date": "2026-08-04",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": {
+    "enabled": true,
+    "head_sampling_rate": 1
+  },
+  "assets": {
+    "directory": "public",
+    "binding": "ASSETS",
+    "html_handling": "drop-trailing-slash",
+    "not_found_handling": "404-page",
+    "run_worker_first": ["/auth/*", "/api/*", "/mcp"]
+  },
+  "routes": [
+    {
+      "pattern": "eve-assist.561.group",
+      "custom_domain": true
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "eve-assist",
+      "database_id": "972f611a-093b-404b-9520-0a531d5798e6"
+    }
+  ],
+  "vars": {
+    "PUBLIC_URL": "https://eve-assist.561.group",
+    "EVE_USER_AGENT": "eve-assist.561.group (decision-support tool; contact: morgan.sennhauser@gmail.com; +https://eve-assist.561.group)"
+  }
+}

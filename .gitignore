@@ -1,0 +1,9 @@
+node_modules/
+
+# public/ is overwritten by scripts/sync-public.mjs (predeploy) from the
+# engine package's public/ directory — regenerable, not durable source, per
+# the content/ vs data/ convention. Only the files this site owns outright
+# are tracked.
+public/*
+!public/404.html
+!public/.assetsignore
