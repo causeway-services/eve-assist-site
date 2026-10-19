@@ -15,5 +15,9 @@
   "dependencies": {
     "@red-cup-engineering/eve-online-services-section": "0.1.0",
     "wrangler": "^4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/causeway-services/eve-assist-site.git"
   }
 }
