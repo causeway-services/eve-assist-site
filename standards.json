@@ -1,0 +1,25 @@
+{
+  "host": "eve-assist.561.group",
+  "name": "EVE Assist",
+  "kind": "app",
+  "appType": "WebApplication",
+  "applicationCategory": "GameApplication",
+  "company": "redcup",
+  "title": "EVE Assist: decision support for EVE Online pilots",
+  "description": "Decision support for EVE Online: cited data from your own character, an AI analyst that shows its work, and tools for your own assistant. Never plays for you.",
+  "tagline": "Decision support for EVE Online pilots. Cited data, an analyst that shows its work. Never plays for you.",
+  "root": "public",
+  "pages": [
+    {
+      "file": "index.html",
+      "path": "/",
+      "forceTitle": true
+    }
+  ],
+  "sitemap": [
+    "/"
+  ],
+  "csp": "default-src 'self'; img-src 'self' data: https://images.evetech.net; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; font-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'",
+  "llms": "EVE Assist is decision support for EVE Online pilots, from Red Cup Engineering. It reads your character's public and authorized data from CCP's own ESI API, cites exactly where and when every number was retrieved, and stops there: you still fly the ship and place the orders. It is not gameplay automation.\n\n## How to use it\n\nOpen https://eve-assist.561.group/ and sign in with EVE Online single sign-on to connect a character. The app has a dashboard, market, assets, map, analyst chat and settings. The chat analyst is an AI that shows its work and cites its sources; AI provider keys are set in settings. A toolbelt for your own assistant is offered over MCP at https://eve-assist.561.group/mcp.\n\n## Rules\n\n- It never plays the game for you and never automates in-game actions.\n- Figures come from ESI with the retrieval time shown; nothing is invented to fill a gap.\n- Your ESI tokens and AI keys are sealed at rest.\n- It is not affiliated with or endorsed by CCP Games.\n\n## Pages\n\n- [EVE Assist](https://eve-assist.561.group/): What it is and how to start.\n- [Dashboard](https://eve-assist.561.group/dashboard.html): Your character at a glance (sign-in required).\n- [Market](https://eve-assist.561.group/market.html): Market data and orders (sign-in required).\n- [Assets](https://eve-assist.561.group/assets.html): Assets and ledger export (sign-in required).\n- [Map](https://eve-assist.561.group/map.html): Routes and systems (sign-in required).\n- [Chat](https://eve-assist.561.group/chat.html): The analyst (sign-in required).\n- [Settings](https://eve-assist.561.group/settings.html): Connect a character and set a provider key.\n\n## Publisher\n\nRed Cup Engineering, the 561 Group's engineering company: https://engineering.561.group/",
+  "static": "brand"
+}
