@@ -19,5 +19,10 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/causeway-services/eve-assist-site.git"
+  },
+  "license": "Apache-2.0",
+  "funding": {
+    "type": "individual",
+    "url": "https://github.com/561-group/.github/blob/main/TIPS.md"
   }
 }
