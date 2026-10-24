@@ -14,7 +14,7 @@
 Deployable Cloudflare Worker site for `https://eve-assist.561.group`, the
 public entry point of **EVE Assist**. This directory carries no application
 logic — it wraps the engine package
-(`@red-cup-engineering/eve-online-services-section`, developed at
+(`@red-cup-engineering/eve-online-engineering-services-section`, developed at
 `.../eve-online-services-section/`) for deployment, following the pattern
 established by `sites/561.group` and `koios.news`. If you're looking for how
 EVE Assist works, read that package's `ROADMAP.md`; this README only covers
@@ -23,7 +23,7 @@ EVE Assist works, read that package's `ROADMAP.md`; this README only covers
 ## What deploys where
 
 - `src/index.mjs` imports `createEveAssistWorker` from
-  `@red-cup-engineering/eve-online-services-section/web` and exports the
+  `@red-cup-engineering/eve-online-engineering-services-section/web` and exports the
   result as the Worker's default export. All routing, auth, ESI access, chat,
   and MCP logic lives in the engine package — this file must stay a
   one-line re-export.
@@ -142,10 +142,10 @@ engine package, resolved through the private registry per the root
 
 **Dev note — before the engine package's first publish:** `npm install` in
 this directory will fail to resolve
-`@red-cup-engineering/eve-online-services-section` until that package has
+`@red-cup-engineering/eve-online-engineering-services-section` until that package has
 been published at least once to the private registry (it has not been as of
 this writing — see the engine's `ROADMAP.md` status line). `src/index.mjs`
-intentionally keeps the bare specifier import (`@red-cup-engineering/eve-online-services-section/web`)
+intentionally keeps the bare specifier import (`@red-cup-engineering/eve-online-engineering-services-section/web`)
 rather than switching to a relative path across the package boundary — do
 not "fix" this by changing it to a relative import; that would silently
 re-couple this site to the engine's directory layout and defeat the point of
